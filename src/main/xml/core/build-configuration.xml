@@ -26,7 +26,7 @@
   <!-- property name="xp.publish.resolver" value="shared-snapshots"/ -->
 
   <!-- Required in build-app -->
-  <fileset id="build.appSourceDirectory" dir="${basedir}/src/resources/" includes="webapp/**" erroronmissingdir="false" followsymlinks="false"/>
+  <fileset id="build.appSourceDirectory" dir="${basedir}/src/resources/" includes="doc_root/**" erroronmissingdir="false" followsymlinks="false"/>
   <fileset id="build.configSourceDirectory" dir="${basedir}/src/resources/" includes="etc/**" erroronmissingdir="false" followsymlinks="false"/>
   <fileset id="build.containerConfigDirectory" dir="${basedir}/src/resources/" erroronmissingdir="false" followsymlinks="false">
     <include name="container/*"/>
