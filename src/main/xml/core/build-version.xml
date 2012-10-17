@@ -42,6 +42,7 @@
      revSep=""
      defaultBuildNumber="1"
      resolver="${xp.publish.resolver}"
+     settingsRef="ivy.settings.local"
     />
   </target>
 

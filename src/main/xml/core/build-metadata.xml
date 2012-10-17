@@ -17,12 +17,14 @@
     <ivy:deliver
      deliverpattern="${build.target}/ivy-${ivy.new.revision}.xml"
      pubrevision="${ivy.new.revision}"
+     settingsRef="ivy.settings.local"
     />
 
     <ivy:makepom
      ivyfile="${build.target}/ivy-${ivy.new.revision}.xml"
      pomfile="${build.target}/${ivy.module}-${ivy.new.revision}.pom"
      printIvyInfo="false"
+     settingsRef="ivy.settings.local"
     />
   </target>
 
