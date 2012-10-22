@@ -61,6 +61,9 @@
           <pathelement path="${build.target.classes}"/>
           <fileset refid="path.deps"/>
         </path>
+        <mapper>
+          <globmapper from="${build.target}/*" to="../../*" handledirsep="true"/>
+        </mapper>
       </pathconvert>
 
       <!-- Generate ivy.pth for use by tests -->
