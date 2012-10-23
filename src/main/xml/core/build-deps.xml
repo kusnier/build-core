@@ -23,6 +23,7 @@
      outputpattern="resolve-[conf].[ext]"
      dot="true"
      graph="false"
+     settingsRef="ivy.settings.local"
     />
 
     <!-- Pick up .dot files and generate .pngs from it -->
@@ -77,6 +78,7 @@
          module="${@{prefix}.module}"
          revision="latest.integration"
          property="module.new.revision"
+         settingsRef="ivy.settings.local"
         />
 
         <if>
@@ -108,6 +110,7 @@
      outputpattern="resolve-plugins-[conf].[ext]"
      dot="false"
      graph="false"
+     settingsRef="ivy.settings.local"
     />
 
     <ivy:retrieve

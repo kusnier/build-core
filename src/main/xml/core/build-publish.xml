@@ -10,6 +10,7 @@
      resolver="local"
      overwrite="true"
      publishivy="true"
+     settingsRef="ivy.settings.local"
     />
   </target>
 
@@ -17,7 +18,7 @@
     <ant target="publish:-do-publish"/>
   </target>
 
-  <target name="publish:-do-publish">
+  <target name="publish:-do-publish" depends="-init:configure:ivy">
     <echo>===> Deploying ${ivy.organisation}#${ivy.module} @ ${xp.publish.resolver}</echo>
 
     <!-- Declare if not declared previously -->
@@ -29,6 +30,7 @@
      resolver="${xp.publish.resolver}"
      overwrite="${xp.overwrite}"
      publishivy="true"
+     settingsRef="ivy.settings.local"
     />
   </target>
 

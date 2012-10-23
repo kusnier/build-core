@@ -30,6 +30,7 @@
      type="app"
      setid="xp.artifacts.app"
      transitive="false"
+     settingsRef="ivy.settings.local"
     />
   </target>
 
